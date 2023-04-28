@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Uploaded</title>
+</head>
+<body>
+    <h1>Image uploaded successfully</h1>
+    <form action="/detect" method="POST">
+        <button type="submit">Run Object Detection</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Go back to the main page</a>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Detection Results</title>
+</head>
+<body>
+    <h1>Object Detection Results</h1>
+    {% for output_image_url, output_csv_url in output_files %}
+        <img src="{{ output_image_url }}" alt="Output Image">
+        <br><br>
+        <a href="{{ output_image_url }}" download>Download Output Image</a>
+        <br>
+        <a href="{{ output_csv_url }}" download>Download CSV Data</a>
+        <br><br>
+    {% endfor %}
+</body>
+</html>
+
